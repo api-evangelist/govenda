@@ -1,0 +1,91 @@
+aid: govenda
+name: Govenda
+review:
+  question: Does Govenda expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-05'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Govenda does not publish any public API -
+    REST or otherwise - so there is no server-push transport (WebSocket or SSE)
+    on a Govenda API to model. Govenda is a closed SaaS board portal delivered
+    through web and mobile applications; whatever real-time behavior exists inside
+    those apps is internal to the product and is not exposed or documented as a
+    consumable API surface.
+findings:
+  summary: |
+    Govenda does not expose a documented public WebSocket API - and, more broadly,
+    does not expose any documented public or partner developer API at all. Govenda
+    (formerly BoardBookit, acquired by OnBoard in 2024) is board management and
+    governance software: a secure board portal for scheduling and running board and
+    committee meetings, distributing board books and documents, managing directors
+    and members, capturing votes and minutes, and administrator reporting. It is
+    delivered as web and mobile applications. As of the review date there is no
+    developer portal, no API reference, no OpenAPI, no GraphQL schema, and no
+    WebSocket (ws:// or wss://) endpoint documented anywhere on govenda.com.
+    Integration is limited to identity and productivity connectors.
+  publicApi: |
+    No public or partner developer API is documented. The govenda.com site has no
+    Developers, API, or integrations documentation section in its navigation or
+    footer. Reviews and comparison sites likewise report that Govenda does not
+    offer an API for developers. Any programmatic, bulk-export, or provisioning
+    access would need to be arranged directly with Govenda/OnBoard sales.
+  integrations: |
+    The only integrations promoted are identity and productivity connectors, not
+    developer APIs: single sign-on (for example Okta), Microsoft 365 in-browser
+    collaboration and editing, calendar connectivity, two-factor authentication,
+    and biometric login. These are configured for administrators, not consumed as
+    a documented programmatic API.
+  endpointsModeled: none
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented. Govenda publishes no public API of any kind.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API, API reference, or OpenAPI is published by Govenda.
+    - protocol: GraphQL
+      scheme: https
+      documented: false
+      note: No GraphQL endpoint or schema is documented.
+    - protocol: Webhook
+      scheme: https
+      documented: false
+      note: No outbound webhook or event subscription surface is documented.
+  pricing: |
+    Pricing is not published. Govenda is a contact-sales, annual subscription
+    generally quoted per organization (not per user), with unlimited users.
+    Editions referenced publicly include Premium, Elite, and Enterprise Elite.
+    Buyers request a custom quote based on board size, committees, and modules.
+sources:
+  - url: https://www.govenda.com/
+    type: Website
+    note: Product homepage. No Developers, API, or integrations documentation section in nav or footer.
+  - url: https://www.govenda.com/security/
+    type: Website
+    note: Security page. Lists SSO, two-factor auth, biometric login, and Microsoft 365; no API, SCIM, or webhooks.
+  - url: https://www.govenda.com/board-portal-software-overview/
+    type: Website
+    note: Board portal product overview - meetings, documents, members, committees; no programmatic access.
+  - url: https://www.govenda.com/pricing/
+    type: Pricing
+    note: Contact-sales pricing page; no public price list. Now branded under OnBoard.
+  - url: https://www.getapp.com/collaboration-software/a/boardbookit/integrations/
+    type: ThirdParty
+    note: Third-party integrations listing; reports SSO/calendar-style connectors, no developer API.
+  - url: https://www.linkedin.com/company/govenda/
+    type: LinkedIn
+    note: Company LinkedIn profile.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    Govenda publishes no public or partner developer API, so there is nothing to
+    document as REST, GraphQL, or WebSocket, and no AsyncAPI document was created
+    (there is no server-push API surface to model). The catalog entry is an honest
+    stub: it describes the product and its access model and deliberately claims no
+    API endpoints. It should be revisited if Govenda/OnBoard later publishes a
+    documented developer API.

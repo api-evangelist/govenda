@@ -1,0 +1,39 @@
+aid: govenda
+url: https://raw.githubusercontent.com/api-evangelist/govenda/refs/heads/main/apis.yml
+name: Govenda
+kind: company
+description: Govenda (formerly BoardBookit, acquired by OnBoard in 2024) is board
+  management and governance software - a secure board portal for scheduling and
+  running board and committee meetings, distributing board books and documents,
+  managing directors and members, capturing votes and minutes, and reporting to
+  administrators. Access is delivered through web and mobile applications for
+  board professionals, administrators, directors, and executives. As of this
+  cataloging, Govenda does NOT publish a public or partner developer API, an API
+  reference, or developer documentation. Integration is limited to identity and
+  productivity connectors - single sign-on (for example Okta), Microsoft 365
+  in-browser collaboration, calendar connectivity, two-factor authentication, and
+  biometric login. Any programmatic or SCIM/provisioning access would need to be
+  arranged directly with Govenda/OnBoard sales; there is no self-serve, documented
+  API surface to model. This entry is therefore a stub - no API endpoints are
+  claimed or modeled.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Board Management
+- Governance
+- Board Portal
+- Meetings
+- Documents
+- No Public API
+created: '2026-07-05'
+modified: '2026-07-05'
+specificationVersion: '0.19'
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/govenda/
+- type: Website
+  url: https://www.govenda.com/
+- type: Plans
+  url: https://www.govenda.com/pricing/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
