@@ -28,6 +28,10 @@ created: '2026-07-05'
 modified: '2026-07-05'
 specificationVersion: '0.19'
 common:
+- type: TrustCenter
+  url: security/govenda-trust-center.yml
+- type: DomainSecurity
+  url: security/govenda-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/govenda/
 - type: Website
