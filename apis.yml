@@ -16,7 +16,18 @@ description: Govenda (formerly BoardBookit, acquired by OnBoard in 2024) is boar
   arranged directly with Govenda/OnBoard sales; there is no self-serve, documented
   API surface to model. This entry is therefore a stub - no API endpoints are
   claimed or modeled.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/govenda.png
 tags:
 - Board Management
 - Governance
