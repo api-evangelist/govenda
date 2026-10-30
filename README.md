@@ -1,4 +1,4 @@
-# Govenda (govenda)
+# Govenda
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,48 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Govenda (formerly BoardBookit, acquired by OnBoard in 2024) is board management and governance software - a secure board portal for scheduling and running board and committee meetings, distributing board books and documents, managing directors and members, capturing votes and minutes, and reporting to administrators. It is delivered as web and mobile applications for board professionals, administrators, directors, and executives.
+Govenda (formerly BoardBookit, acquired by OnBoard in 2024) is board management and governance software - a secure board portal for scheduling and running board and committee meetings, distributing board books and documents, managing directors and members, capturing votes and minutes, and reporting to administrators. Access is delivered through web and mobile applications for board professionals, administrators, directors, and executives. As of this cataloging, Govenda does NOT publish a public or partner developer API, an API reference, or developer documentation. Integration is limited to identity and productivity connectors - single sign-on (for example Okta), Microsoft 365 in-browser collaboration, calendar connectivity, two-factor authentication, and biometric login. Any programmatic or SCIM/provisioning access would need to be arranged directly with Govenda/OnBoard sales; there is no self-serve, documented API surface to model. This entry is therefore a stub - no API endpoints are claimed or modeled.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/govenda/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/govenda/refs/heads/main/apis.yml)
+**Areas:** Board Management · Governance · Board Portal · Meetings · Documents
 
-## API Access Model
+## Govenda on APIs.io
 
-**Govenda does not publish a public or partner developer API.** As of this cataloging (2026-07-05):
+Everything profiled for Govenda is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/govenda/](https://apis.io/providers/govenda/)** — or go straight to one of the APIs or properties below.
 
-- There is **no developer portal, API reference, or API documentation** on govenda.com.
-- There are **no documented REST, GraphQL, WebSocket, or webhook endpoints**.
-- Integration is limited to **identity and productivity connectors**: single sign-on (for example Okta), Microsoft 365 in-browser collaboration, calendar connectivity, two-factor authentication, and biometric login.
-- Any programmatic, bulk-export, or SCIM/provisioning access would have to be arranged **directly with Govenda/OnBoard sales**. There is no self-serve, documented API surface.
+### Published properties
 
-Because no public API exists, **this entry is a stub**. No API endpoints are claimed, and none are modeled or fabricated. The logical surfaces a board portal would expose - Meetings, Documents, Members, and Committees - are noted here only to describe the product, not to imply that any of them are available programmatically.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Pricing
+#### Security (2)
 
-Govenda pricing is **not published**. It is a **contact-sales, annual subscription** generally quoted per organization (not per user), with unlimited users. Editions referenced publicly include Premium, Elite, and Enterprise Elite. Buyers request a custom quote based on board size, committees, and required modules.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Pricing / plans:** [https://www.govenda.com/pricing/](https://www.govenda.com/pricing/)
+- [Govenda Domain Security](https://apis.io/security/govenda/govenda-domain-security/)
+- [Govenda Trust Center](https://apis.io/security/govenda/govenda-trust-center/)
 
-## Tags
+## Where to find this API
 
-- Board Management
-- Governance
-- Board Portal
-- Meetings
-- Documents
-- No Public API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Timestamps
-
-- **Created:** 2026-07-05
-- **Modified:** 2026-07-05
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/govenda/)
 - [Website](https://www.govenda.com/)
-- [Plans](https://www.govenda.com/pricing/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 5.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/govenda/](https://apis.io/providers/govenda/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Govenda: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/govenda/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
